@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OBS WebSocket 功能测试</title>
+    <style>
+      #function-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+      }
+      #result {
+        background-color: #2a2a2a;
+        padding: 1rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+        white-space: pre-wrap;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-D6_zpCKt.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-x-3aFV18.css">
+  </head>
+  <body>
+    <header>
+      <h1>OBS WebSocket 功能测试</h1>
+      <div id="connection-status">WebSocket 状态: <span id="ws-status">未连接</span></div>
+      <button id="connect-ws">连接 WebSocket</button>
+      <button id="disconnect-ws">断开 WebSocket</button>
+    </header>
+    <main>
+      <section id="function-list"></section>
+      <section id="result"></section>
+    </main>
+  </body>
+</html>
